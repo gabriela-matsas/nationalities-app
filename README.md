@@ -46,6 +46,12 @@
 - REST Countries API ([https://restcountries.com](https://restcountries.com))
 
 ---
+## Screenshot / Captura de tela
+
+<img width="927" height="876" alt="nationalities_print_US" src="https://github.com/user-attachments/assets/64ea8b09-4171-466d-90fb-6f66e173f6e7" />
+
+<img width="1328" height="937" alt="nationalities_print" src="https://github.com/user-attachments/assets/f5d4c01b-2414-4167-bbb6-2ecfd3585b2d" />
+
 
 ## License | Licença
 
