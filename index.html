@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botões de idioma -->
+    <button onclick="setLang('pt')">PT</button>
+    <button onclick="setLang('en')">EN</button>
+
+    <!-- Título e pergunta -->
+    <h1 id="title">Nationalities</h1>
+    <p id="question">In which country were you born?</p>
+
+    <!-- Formulário para digitar o país -->
+    <form onsubmit="verify(); return false;">
+        <input type="text" id="txtname" placeholder="Type a country">
+        <input type="submit" id="btn" value="Verify">
+    </form>
+
+    <!-- Resultado da API -->
+    <div id="ver"></div>
+
+    <!-- Script externo -->
+    <script src="scriptnacionalidades.js"></script>
+</body>
+</html>

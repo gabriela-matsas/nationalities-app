@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* BODY */
+body {
+    text-align: center;
+    background: linear-gradient(120deg, #78a2e6, #c2e9fb); /* degrade azul claro */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    margin-bottom: 20px;
+    color: #064273;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* BOTÕES */
+button {
+    background-color: #064273;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0a5293;
+    transform: scale(1.05);
+}
+
+/* FORMULÁRIO */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #064273;
+    width: 200px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #064273;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0a5293;
+    transform: scale(1.05);
+}
+
+#ver {
+    display: none; /* começa escondida */
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 20px 30px rgba(9, 9, 9, 0.15);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* para animação suave */
+}
+#ver.show {
+    display: block;
+    opacity: 1;
+}
+
+
+#ver img {
+    display: block;
+    margin: 10px auto;
+}
+
+#ver p {
+    margin: 5px 0;
+}
