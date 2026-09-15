@@ -1,6 +1,6 @@
 # Nationalities App | App de Nacionalidades
 
-[🌐 See it live / Veja ao vivo]: https://gabriela-matsas.github.io/nationalities-app/
+### 🌐 [See it live / Veja ao vivo](https://gabriela-matsas.github.io/nationalities-app/)
 
 **EN:** App to discover any country's info: capital, language, currency, population, continent, and driving side.  
 **PT:** App para descobrir informações de qualquer país: capital, idioma, moeda, população, continente e lado de direção.
