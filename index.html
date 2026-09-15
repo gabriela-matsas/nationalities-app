@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nacionalities</title>
+    <title>Nationalities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Botões de idioma -->
-    <button onclick="setLang('pt')">PT</button>
-    <button onclick="setLang('en')">EN</button>
 
-    <!-- Título e pergunta -->
-    <h1 id="title">Nationalities</h1>
-    <p id="question">In which country were you born?</p>
+    <div class="card">
+        <div class="lang-toggle">
+            <button type="button" id="lang-pt" onclick="setLang('pt')" class="active">PT</button>
+            <button type="button" id="lang-en" onclick="setLang('en')">EN</button>
+        </div>
 
-    <!-- Formulário para digitar o país -->
-    <form onsubmit="verify(); return false;">
-        <input type="text" id="txtname" placeholder="Type a country">
-        <input type="submit" id="btn" value="Verify">
-    </form>
+        <h1 id="title">🌍 Nacionalidades</h1>
+        <p id="question">Em qual país você nasceu?</p>
 
-    <!-- Resultado da API -->
-    <div id="ver"></div>
+        <form onsubmit="verify(); return false;">
+            <input type="text" id="txtname" placeholder="Digite um país" list="countries-list" autocomplete="off">
+            <datalist id="countries-list"></datalist>
+            <input type="submit" id="btn" value="Verificar">
+        </form>
 
-    <!-- Script externo -->
+        <div id="ver"></div>
+    </div>
+
     <script src="scriptnacionalidades.js"></script>
 </body>
 </html>
